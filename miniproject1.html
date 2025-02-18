@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visitindia - Historical Places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0%;
+            padding: 0%;
+            background-image: url('indian-flag.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+        .logo {
+            font-size: 34px;
+            font-weight: bold;
+            color: #ff9800;
+            margin-right: 20px;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .search-bar {
+            text-align: center;
+            margin-top: 80px;
+        }
+        .search-bar input {
+            padding: 8px;
+            width: 60%;
+            border-radius: 5px;
+            border: none;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 100px 20px 60px;
+            justify-items: center;
+        }
+        .card {
+            width: 300px;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .card h3, .card p, .card a {
+            position: relative;
+            z-index: 2;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .card a:hover {
+            background: #e68900;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px 20px;
+        }
+        .footer-section {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">visitINDIA</div>
+        <div class="title">Historical Places in India</div>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Destinations, Tours, Activities">
+    </div>
+    <div class="container">
+        <div class="card" style="background-image: url('tajmahal.jpg');">
+            <h3>Taj Mahal</h3>
+            <p>A symbol of love, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card" style="background-image: url('redfort.jpg');">
+            <h3>Red Fort</h3>
+            <p>A UNESCO World Heritage site in Delhi, known for its massive red sandstone walls.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card" style="background-image: url('hawamahal.jpg');">
+            <h3>Hawa Mahal</h3>
+            <p>The Palace of Winds in Jaipur, known for its unique architecture.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card" style="background-image: url('qutubminar.jpg');">
+            <h3>Qutub Minar</h3>
+            <p>The tallest brick minaret in the world, built in the 12th century.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card" style="background-image: url('gatewayofindia.jpg');">
+            <h3>Gateway of India</h3>
+            <p>A historic arch-monument built in Mumbai during the 20th century.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card" style="background-image: url('charminar.jpg');">
+            <h3>Charminar</h3>
+            <p>Charminar: An iconic monument in Hyderabad, built in 1591, known for its grand arches and minarets.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explore visitINDIA</h3>
+                <p>Packages | Hotels | Destinations | Collections | About Us</p>
+            </div>
+            <div class="footer-section">
+                <h3>Need help?</h3>
+                <p>Call: 022-48934191 | Email: hello@visitindia.com</p>
+                <p>Mon-Fri: 10AM - 7PM (IST) | Sat: 10AM - 2PM (IST)</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <p>Designed and Developed by KAVITA KUMARI</p>
+    </footer>
+</body>
+</html>
